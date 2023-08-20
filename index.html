@@ -42,7 +42,7 @@
                     <h2 class="text-4xl font-semibold mb-8">Kitchenware</h2>
                     <div class="flex gap-6">
                         <!-- card-1  -->
-                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" data-item="K. Accessories" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod1.png" alt="" class="rounded-xl p-10 bg-slate-100" />
                             </figure>
@@ -59,7 +59,7 @@
                             </div>
                         </div> 
                         <!-- card-2  -->
-                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" data-item="C. Accessories" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod2.png" alt="" class="rounded-xl p-10 bg-slate-100" />
                             </figure>
@@ -76,7 +76,7 @@
                             </div>
                         </div> 
                         <!-- card-3  -->
-                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" data-item="Home Cooker" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod3.png" alt="" class="rounded-xl p-10 bg-slate-100"/>
                             </figure>
@@ -97,7 +97,7 @@
                     <h2 class="text-4xl font-semibold mb-8 mt-[56px]">Sportswear</h2>
                     <div class="flex gap-6">
                         <!-- card-4  -->
-                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" data-item="Sports Back Cap" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod4.png" alt="" class="rounded-xl p-10 bg-slate-100" />
                             </figure>
@@ -114,7 +114,7 @@
                             </div>
                         </div> 
                         <!-- card-5  -->
-                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" data-item="Full Jersey Set" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod5.png" alt="" class="rounded-xl p-10 bg-slate-100" />
                             </figure>
@@ -150,7 +150,7 @@
                     </div>
                     <!-- furniture section -->
                     <h2 class="text-4xl font-semibold mb-8 mt-[56px]">Furniture</h2>
-                    <div class="flex gap-6">
+                    <div class="flex gap-6 mb-5">
                         <!-- card-7  -->
                         <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
@@ -210,8 +210,7 @@
                     <div class="border p-10 bg-white space-y-3">
                         <h1 class="text-2xl font-medium">Have Coupon?</h1>
                         <div class="">
-                            <input type="text" placeholder="Coupon Code" class="border py-3 px-2 rounded-l-lg" ><button class="bg-[#E527B2] py-3 px-4 text-white rounded-r-lg hover:bg-fuchsia-400 hover:text-black">Apply</button>
-                            
+                            <input id="couponInput" type="text" placeholder="Coupon Code" class="border py-3 px-2 rounded-l-lg" ><button id="applyBtn" class="bg-[#E527B2] py-3 px-4 text-white rounded-r-lg hover:bg-fuchsia-400 hover:text-black" disabled >Apply</button>
                         </div>
                     </div>
                     <div class="border p-10 bg-white space-y-3 mt-10">
@@ -228,7 +227,7 @@
                     </div>
                     <div class="text-center">
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class=" bg-[#E527B2] py-3 px-4 -mt-28 text-white rounded-lg hover:bg-fuchsia-400 hover:text-black" onclick="my_modal_1.showModal()">Make Purchase</button>
+                        <button id="btnPurchase" class=" bg-[#E527B2] py-3 px-4 -mt-28 text-white rounded-lg hover:bg-fuchsia-400 hover:text-black" onclick="my_modal_1.showModal()" disabled >Make Purchase</button>
                         
                         <dialog id="my_modal_1" class="modal">
                         <form method="dialog" class="modal-box">
