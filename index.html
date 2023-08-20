@@ -42,7 +42,7 @@
                     <h2 class="text-4xl font-semibold mb-8">Kitchenware</h2>
                     <div class="flex gap-6">
                         <!-- card-1  -->
-                        <div class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod1.png" alt="" class="rounded-xl p-10 bg-slate-100" />
                             </figure>
@@ -59,7 +59,7 @@
                             </div>
                         </div> 
                         <!-- card-2  -->
-                        <div class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod2.png" alt="" class="rounded-xl p-10 bg-slate-100" />
                             </figure>
@@ -76,7 +76,7 @@
                             </div>
                         </div> 
                         <!-- card-3  -->
-                        <div class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod3.png" alt="" class="rounded-xl p-10 bg-slate-100"/>
                             </figure>
@@ -97,7 +97,7 @@
                     <h2 class="text-4xl font-semibold mb-8 mt-[56px]">Sportswear</h2>
                     <div class="flex gap-6">
                         <!-- card-4  -->
-                        <div class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod4.png" alt="" class="rounded-xl p-10 bg-slate-100" />
                             </figure>
@@ -114,7 +114,7 @@
                             </div>
                         </div> 
                         <!-- card-5  -->
-                        <div class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod5.png" alt="" class="rounded-xl p-10 bg-slate-100" />
                             </figure>
@@ -131,7 +131,7 @@
                             </div>
                         </div> 
                         <!-- card-6  -->
-                        <div class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod6.png" alt="" class="rounded-xl p-10 bg-slate-100"/>
                             </figure>
@@ -152,7 +152,7 @@
                     <h2 class="text-4xl font-semibold mb-8 mt-[56px]">Furniture</h2>
                     <div class="flex gap-6">
                         <!-- card-7  -->
-                        <div class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod7.png" alt="" class="rounded-xl p-10 bg-slate-100" />
                             </figure>
@@ -169,7 +169,7 @@
                             </div>
                         </div> 
                         <!-- card-8  -->
-                        <div class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod5.png" alt="" class="rounded-xl p-10 bg-slate-100" />
                             </figure>
@@ -186,7 +186,7 @@
                             </div>
                         </div> 
                         <!-- card-9  -->
-                        <div class="card bg-base-100 shadow-xl border">
+                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border">
                             <figure class="p-5">
                             <img src="./images/prod6.png" alt="" class="rounded-xl p-10 bg-slate-100"/>
                             </figure>
@@ -204,6 +204,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- add tho cart section -->
                 <div class="mt-[199px]">
                     <div class="border p-10 bg-white space-y-3">
@@ -214,12 +215,14 @@
                         </div>
                     </div>
                     <div class="border p-10 bg-white space-y-3 mt-10">
-                        <div id="">
+                        <div id="selectItem" class="text-2xl font-medium">
 
                         </div>
                         <hr>
-                        <div id="">
-                            
+                        <div id="itemsPrice" class="space-y-2">
+                            <h6  class="text-2xl font-medium">Total Price: <span id="totalPrice"  class="text-slate-300">00.00 TK</span> </h6>
+                            <h6 class="text-2xl font-medium">Discount:  <span class="text-slate-300">00.00 TK</span> </h6>
+                            <h6 class="text-2xl font-medium">Total: <span class="text-slate-300">00.00 TK</span> </h6>
                         </div>
                         <hr>
                     </div>
@@ -246,6 +249,6 @@
             
         </section>
     </main>
-    
+    <script src="./index.js"></script>
 </body>
 </html>
