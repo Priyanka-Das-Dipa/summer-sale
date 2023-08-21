@@ -23,17 +23,9 @@ function cardClick(target) {
   } else {
     btnPurchase.disabled = true;
   }
-  // discount
-  /* if(total >= 200){
-        const discount = total * 0.20;
-        const finalTotal = total - discount;
-        
-        document.getElementById("discount").innerText = discount.toFixed(2);
-        document.getElementById("finalTotal").innerText = finalTotal.toFixed(2);
-    } */
 }
 
-
+// Apply Button and Discount
 function applyCoupon() {
   const couponInput = document.getElementById("couponInput");
   const couponCode = couponInput.value;
@@ -48,8 +40,15 @@ function applyCoupon() {
       document.getElementById("discount").innerText = discount.toFixed(2);
       document.getElementById("finalTotal").innerText = finalTotal.toFixed(2);
     }
+    else{
+      alert('Invalid Coupon Code')
+    }
     couponInput.value = "";
   } else {
     applyBtn.disabled = true;
   }
+}
+// go home button
+function purchaseItem(){
+  window.location.href = "index.html"
 }
